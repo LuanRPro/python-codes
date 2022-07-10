@@ -1,0 +1,20 @@
+#Dissecando uma variável
+
+entradaUsuario = input('Digite algo: ')
+verificaPrimitivo = type(entradaUsuario)
+verificaEspacos = entradaUsuario.isspace()
+verificaNum = entradaUsuario.isnumeric()
+verificaAlpha = entradaUsuario.isalpha()
+verificaAlphanNum = entradaUsuario.isalnum()
+verificaUpper = entradaUsuario.isupper()
+verificaLower = entradaUsuario.islower()
+verificaCapital = entradaUsuario.istitle()
+
+print('O tipo primitivo desse valor é {}'.format(verificaPrimitivo))
+print('Só tem espaços? {}'.format(verificaEspacos))
+print('É um número? {}'.format(verificaNum))
+print('É alfabético? {}'.format(verificaAlpha))
+print('É alfanumérico? {}'.format(verificaAlphanNum))
+print('Está em maiúsculas? {}'.format(verificaUpper))
+print('Está em minúsculas? {}'.format(verificaLower))
+print('Está capitalizada? {}'.format(verificaCapital))
