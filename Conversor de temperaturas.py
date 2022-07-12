@@ -39,7 +39,7 @@ else :
             try :
                 valor = float(input('\nAgora informe o valor da temperatura: '))
             except ValueError :
-                print('\nApenas números são aceitos! Tente de novo:\n')
+                print('\n***ERRO***\nApenas números são aceitos! Tente de novo:\n')
                 continue
             else :
                 break
@@ -74,3 +74,7 @@ else :
 # Celsius para Kelvin
         elif escolha1 == 'C' and escolha2 == 'K' :
             print('\n{}° graus Celsius é igual a {:.3f}° Kelvin'.format(valor, celsiusKelvin))
+
+# Se as medidas forem iguais
+        else :
+            print('\nA medida escolhida ({}) foi a mesma, {} é igual a {}'.format(escolha1, valor, valor))
